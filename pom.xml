@@ -1,0 +1,303 @@
+<!--
+
+    Copyright (C) 2018 Red Hat, Inc. (jdcasey@commonjava.org)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.commonjava</groupId>
+    <artifactId>commonjava</artifactId>
+    <version>13</version>
+  </parent>
+
+  <groupId>org.commonjava.auditquery</groupId>
+  <artifactId>auditquery-parent</artifactId>
+  <version>0.13.2-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Audit Query Service</name>
+  <inceptionYear>2018</inceptionYear>
+
+  <scm>
+    <connection>scm:git:https://github.com/Commonjava/auditquery.git</connection>
+    <developerConnection>scm:git:git@github.com:Commonjava/auditquery.git</developerConnection>
+    <url>http://github.com/Commonjava/auditquery</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <properties>
+    <projectOwner>Red Hat, Inc.</projectOwner>
+    <javaVersion>1.8</javaVersion>
+
+    <propulsorVersion>1.4</propulsorVersion>
+    <undertowVersion>1.4.22.Final</undertowVersion>
+    <weftVersion>1.10</weftVersion>
+    <slf4jVersion>1.7.25</slf4jVersion>
+    <jackson-version>2.9.9</jackson-version>
+    <infinispanVersion>9.4.7.Final</infinispanVersion>
+    <hibernateVersion>5.8.1.Final</hibernateVersion>
+    <httpcoreVersion>4.4.6</httpcoreVersion>
+    <httpclientVersion>4.5.3</httpclientVersion>
+    <jhttpcVersion>1.9</jhttpcVersion>
+    <junitVersion>4.12</junitVersion>
+    <commonslang3Version>3.8</commonslang3Version>
+    <jgroupsVersion>4.0.4.Final</jgroupsVersion>
+    <commonsioVersion>2.6</commonsioVersion>
+    <swaggerVersion>1.5.9</swaggerVersion>
+  </properties>
+
+  <modules>
+    <module>rest</module>
+    <module>deployments</module>
+    <module>model-java</module>
+    <module>core</module>
+    <module>uis</module>
+    <module>cache</module>
+    <module>api</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.undertow</groupId>
+        <artifactId>undertow-servlet</artifactId>
+        <version>${undertowVersion}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.commonjava.propulsor</groupId>
+        <artifactId>propulsor-core</artifactId>
+        <version>${propulsorVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.propulsor</groupId>
+        <artifactId>propulsor-undertow</artifactId>
+        <version>${propulsorVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.propulsor</groupId>
+        <artifactId>propulsor-resteasy</artifactId>
+        <version>${propulsorVersion}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.commonjava.propulsor.config</groupId>
+        <artifactId>propulsor-configuration-core</artifactId>
+        <version>${propulsorVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.propulsor.config</groupId>
+        <artifactId>propulsor-configuration-dotconf</artifactId>
+        <version>${propulsorVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.cdi.util</groupId>
+        <artifactId>weft</artifactId>
+        <version>${weftVersion}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.commonjava.auditquery</groupId>
+        <artifactId>auditquery-rest</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.auditquery</groupId>
+        <artifactId>auditquery-model-java</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.auditquery</groupId>
+        <artifactId>auditquery-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.auditquery</groupId>
+        <artifactId>auditquery-cache</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.auditquery</groupId>
+        <artifactId>auditquery-ui-layover</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.auditquery</groupId>
+        <artifactId>auditquery-api</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
+        <version>${jackson-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>2.9.9.2</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+        <version>${jackson-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.jaxrs</groupId>
+        <artifactId>jackson-jaxrs-json-provider</artifactId>
+        <version>${jackson-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.inject</groupId>
+        <artifactId>javax.inject</artifactId>
+        <version>1</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.enterprise</groupId>
+        <artifactId>cdi-api</artifactId>
+        <version>1.2</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4jVersion}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-cdi-embedded</artifactId>
+        <version>${infinispanVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-core</artifactId>
+        <version>${infinispanVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-query</artifactId>
+        <version>${infinispanVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-query-dsl</artifactId>
+        <version>${infinispanVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-search-orm</artifactId>
+        <version>${hibernateVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-search-engine</artifactId>
+        <version>${hibernateVersion}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpcore</artifactId>
+        <version>${httpcoreVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>${httpclientVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.util</groupId>
+        <artifactId>jhttpc</artifactId>
+        <version>${jhttpcVersion}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junitVersion}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${commonslang3Version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jgroups</groupId>
+        <artifactId>jgroups</artifactId>
+        <version>${jgroupsVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>${commonsioVersion}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.swagger</groupId>
+        <artifactId>swagger-annotations</artifactId>
+        <version>${swaggerVersion}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>io.swagger</groupId>
+        <artifactId>swagger-jaxrs</artifactId>
+        <version>${swaggerVersion}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>jsr311-api</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>com.mycila</groupId>
+          <artifactId>license-maven-plugin</artifactId>
+          <version>2.10</version>
+          <configuration>
+            <header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
+            <properties>
+              <owner>${projectOwner}</owner>
+              <email>${projectEmail}</email>
+            </properties>
+            <excludes>
+              <exclude>**/README*</exclude>
+              <exclude>**/LICENSE*</exclude>
+              <exclude>**/node/**</exclude>
+              <exclude>**/node_modules/**</exclude>
+              <exclude>**/dist/**</exclude>
+              <exclude>src/test/resources/**</exclude>
+              <exclude>src/main/resources/**</exclude>
+              <exclude>**/*.groovy</exclude>
+            </excludes>
+            <mapping>
+              <service>SCRIPT_STYLE</service>
+            </mapping>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+</project>
