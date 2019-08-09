@@ -19,15 +19,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.commonjava.auditquery</groupId>
-        <artifactId>auditquery-parent</artifactId>
-        <version>0.13.2-SNAPSHOT</version>
+        <groupId>org.indy.geored</groupId>
+        <artifactId>adhok-repo-migrator-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>auditquery-deployments-parent</artifactId>
+    <artifactId>adhok-repo-migrator-deployments-parent</artifactId>
     <packaging>pom</packaging>
 
-    <name>Audit Query Service Deployments :: Parent</name>
+    <name>Adhok Repo Migrator Deployments :: Parent</name>
 
     <modules>
         <module>standalone-rest</module>

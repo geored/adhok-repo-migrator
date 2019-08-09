@@ -20,14 +20,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.commonjava.auditquery</groupId>
-        <artifactId>auditquery-deployments-parent</artifactId>
-        <version>0.13.2-SNAPSHOT</version>
+        <groupId>org.indy.geored</groupId>
+        <artifactId>adhok-repo-migrator-deployments-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>auditquery-standalone-rest</artifactId>
+    <artifactId>adhok-repo-migrator-standalone-rest</artifactId>
 
-    <name>Audit Query Service Standalone REST Deployment</name>
+    <name>Adhok Repo Migrator Service Standalone REST Deployment</name>
 
     <dependencies>
         <dependency>

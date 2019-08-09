@@ -22,7 +22,7 @@ public class Main
 {
     public static void main( String[] args ) throws Exception
     {
-        BootOptions options = Booter.loadFromSysProps( "auditquery", "auditquery.boot.defaults", "auditquery.home" );
+        BootOptions options = Booter.loadFromSysProps( "...", "...", "..." );
         Booter booter = new Booter();
         booter.runAndWait( options );
     }

@@ -18,13 +18,13 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>auditquery-parent</artifactId>
-        <groupId>org.commonjava.auditquery</groupId>
-        <version>0.13.2-SNAPSHOT</version>
+        <artifactId>adhok-repo-migrator-parent</artifactId>
+        <groupId>org.indy.geored</groupId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <name>Audit Query Service API</name>
+    <name>Adhok Repo Migrator Service API</name>
     <artifactId>auditquery-api</artifactId>
 
     <dependencies>
