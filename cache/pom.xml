@@ -25,7 +25,7 @@
     </parent>
 
     <name>Adhok Repo Migrator Cache</name>
-    <artifactId>auditquery-cache</artifactId>
+    <artifactId>adhok-repo-migrator-cache</artifactId>
 
     <dependencies>
         <dependency>
@@ -37,12 +37,12 @@
             <artifactId>cdi-api</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.commonjava.auditquery</groupId>
-            <artifactId>auditquery-core</artifactId>
+            <groupId>org.indy.geored</groupId>
+            <artifactId>adhok-repo-migrator-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.commonjava.auditquery</groupId>
-            <artifactId>auditquery-model-java</artifactId>
+            <groupId>org.indy.geored</groupId>
+            <artifactId>adhok-repo-migrator-model-java</artifactId>
         </dependency>
 
         <dependency>

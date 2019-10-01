@@ -26,7 +26,7 @@
     </parent>
 
     <name>Adhok Repo Migrator Service Core</name>
-    <artifactId>auditquery-core</artifactId>
+    <artifactId>adhok-repo-migrator-core</artifactId>
 
     <dependencies>
         <dependency>
@@ -63,8 +63,8 @@
             <artifactId>jackson-databind</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.commonjava.auditquery</groupId>
-            <artifactId>auditquery-model-java</artifactId>
+            <groupId>org.indy.geored</groupId>
+            <artifactId>adhok-repo-migrator-model-java</artifactId>
         </dependency>
     </dependencies>
 </project>

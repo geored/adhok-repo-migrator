@@ -21,7 +21,7 @@
   <parent>
     <groupId>org.commonjava</groupId>
     <artifactId>commonjava</artifactId>
-    <version>13</version>
+    <version>15</version>
   </parent>
 
   <groupId>org.indy.geored</groupId>
@@ -33,9 +33,9 @@
   <inceptionYear>2018</inceptionYear>
 
   <scm>
-    <connection>scm:git:https://github.com/Commonjava/auditquery.git</connection>
-    <developerConnection>scm:git:git@github.com:Commonjava/auditquery.git</developerConnection>
-    <url>http://github.com/Commonjava/auditquery</url>
+    <connection>scm:git:https://github.com/geored/adhok-repo-migrator.git</connection>
+    <developerConnection>scm:git:git@github.com:geored/adhok-repo-migrator.git</developerConnection>
+    <url>http://github.com/geored/adhok-repo-migrator</url>
     <tag>HEAD</tag>
   </scm>
 
@@ -65,7 +65,6 @@
     <module>deployments</module>
     <module>model-java</module>
     <module>core</module>
-    <module>uis</module>
     <module>cache</module>
     <module>api</module>
   </modules>
@@ -111,33 +110,29 @@
       </dependency>
 
       <dependency>
-        <groupId>org.commonjava.auditquery</groupId>
-        <artifactId>auditquery-rest</artifactId>
+        <groupId>org.indy.geored</groupId>
+        <artifactId>adhok-repo-migrator-rest</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.commonjava.auditquery</groupId>
-        <artifactId>auditquery-model-java</artifactId>
+        <groupId>org.indy.geored</groupId>
+        <artifactId>adhok-repo-migrator-model-java</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.commonjava.auditquery</groupId>
-        <artifactId>auditquery-core</artifactId>
+        <groupId>org.indy.geored</groupId>
+        <artifactId>adhok-repo-migrator-core</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.commonjava.auditquery</groupId>
-        <artifactId>auditquery-cache</artifactId>
+        <groupId>org.indy.geored</groupId>
+        <artifactId>adhok-repo-migrator-cache</artifactId>
         <version>${project.version}</version>
       </dependency>
+
       <dependency>
-        <groupId>org.commonjava.auditquery</groupId>
-        <artifactId>auditquery-ui-layover</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.commonjava.auditquery</groupId>
-        <artifactId>auditquery-api</artifactId>
+        <groupId>org.indy.geored</groupId>
+        <artifactId>adhok-repo-migrator-api</artifactId>
         <version>${project.version}</version>
       </dependency>
 

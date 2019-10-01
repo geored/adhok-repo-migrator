@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="auditquery-cache" />
+        <module name="adhok-repo-migrator-model-java" />
+        <module name="auditquery-api" />
+        <module name="adhok-repo-migrator-standalone-rest" />
+        <module name="auditquery-core" />
+        <module name="adhok-repo-migrator-rest" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="adhok-repo-migrator-deployments-parent" target="1.5" />
+      <module name="adhok-repo-migrator-model-java" target="1.8" />
+      <module name="adhok-repo-migrator-parent" target="1.5" />
+      <module name="adhok-repo-migrator-rest" target="1.8" />
+      <module name="adhok-repo-migrator-standalone-rest" target="1.8" />
+      <module name="auditquery-api" target="1.8" />
+      <module name="auditquery-cache" target="1.8" />
+      <module name="auditquery-core" target="1.8" />
+      <module name="auditquery-ui-layover" target="1.8" />
+      <module name="auditquery-uis" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

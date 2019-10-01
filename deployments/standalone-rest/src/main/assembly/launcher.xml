@@ -22,20 +22,20 @@
     </formats>
 
     <includeBaseDirectory>true</includeBaseDirectory>
-    <baseDirectory>auditquery</baseDirectory>
+    <baseDirectory>adhok-repo-migrator</baseDirectory>
 
     <dependencySets>
 
         <!-- UI -->
-        <dependencySet>
-            <useProjectArtifact>true</useProjectArtifact>
-            <useStrictFiltering>true</useStrictFiltering>
-            <includes>
-                <include>org.commonjava.auditquery:auditquery-ui-layover</include>
-            </includes>
-            <outputDirectory>ui</outputDirectory>
-            <unpack>true</unpack>
-        </dependencySet>
+<!--        <dependencySet>-->
+<!--            <useProjectArtifact>true</useProjectArtifact>-->
+<!--            <useStrictFiltering>true</useStrictFiltering>-->
+<!--            <includes>-->
+<!--                <include>org.commonjava.auditquery:auditquery-ui-layover</include>-->
+<!--            </includes>-->
+<!--            <outputDirectory>ui</outputDirectory>-->
+<!--            <unpack>true</unpack>-->
+<!--        </dependencySet>-->
 
         <!-- Audit Query Service -->
         <dependencySet>
@@ -53,8 +53,8 @@
             <useProjectArtifact>false</useProjectArtifact>
             <scope>runtime</scope>
             <excludes>
-                <exclude>org.commonjava.auditquery*</exclude>
-                <exclude>org.commonjava*</exclude>
+                <exclude>org.indy.geored*</exclude>
+                <exclude>org.indy*</exclude>
             </excludes>
             <outputDirectory>lib/thirdparty</outputDirectory>
         </dependencySet>
