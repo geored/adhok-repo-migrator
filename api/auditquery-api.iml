@@ -11,7 +11,7 @@
     <orderEntry type="module" module-name="adhok-repo-migrator-model-java" />
     <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.9" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.9.2" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:3.0.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.9" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-search-orm:5.8.1.Final" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:5.2.11.Final" level="project" />
