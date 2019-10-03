@@ -47,9 +47,9 @@ fi
 
 JAVA_OPTS="$JAVA_OPTS $JAVA_DEBUG_OPTS"
 
-MAIN_CLASS=org.commonjava.auditquery.boot.Main
+MAIN_CLASS=org.commonjava.repomigrator.boot.Main
 
-"$JAVA" ${JAVA_OPTS} -cp "${CP}" -Dauditquery.boot.defaults="${BASEDIR}/bin/boot.properties" -Dauditquery.home="${BASEDIR}" -Djava.net.preferIPv4Stack=true ${MAIN_CLASS} "$@"
+"$JAVA" ${JAVA_OPTS} -cp "${CP}" -Dauditquery.boot.defaults="${BASEDIR}/bin/boot.properties" -Drepomigrator.home="${BASEDIR}" -Djava.net.preferIPv4Stack=true ${MAIN_CLASS} "$@"
 ret=$?
 if [ $ret == 0 -o $ret == 130 ]; then
   exit 0

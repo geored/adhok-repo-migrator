@@ -31,7 +31,7 @@
 <!--            <useProjectArtifact>true</useProjectArtifact>-->
 <!--            <useStrictFiltering>true</useStrictFiltering>-->
 <!--            <includes>-->
-<!--                <include>org.commonjava.auditquery:auditquery-ui-layover</include>-->
+<!--                <include>org.commonjava.repomigrator:auditquery-ui-layover</include>-->
 <!--            </includes>-->
 <!--            <outputDirectory>ui</outputDirectory>-->
 <!--            <unpack>true</unpack>-->

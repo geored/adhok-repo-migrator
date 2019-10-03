@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.commonjava.auditquery.boot;
+package org.commonjava.repomigrator.boot;
 
 import org.commonjava.propulsor.boot.BootOptions;
 import org.commonjava.propulsor.boot.Booter;
