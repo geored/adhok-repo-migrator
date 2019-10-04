@@ -22,11 +22,11 @@ public class Main
 {
     public static void main( String[] args ) throws Exception
     {
-        BootOptions options = Booter.loadFromSysProps(
+        new Booter()
+          .runAndWait( Booter.loadFromSysProps(
             "repomigrator",
             "repomigrator.boot.defaults",
-            "repomigrator.home" );
-        Booter booter = new Booter();
-        booter.runAndWait( options );
+            "repomigrator.home" )
+          );
     }
 }

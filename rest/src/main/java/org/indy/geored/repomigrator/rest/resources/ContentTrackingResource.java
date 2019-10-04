@@ -39,22 +39,22 @@ public class ContentTrackingResource
                 implements RestResources
 {
 
-    @Inject
-    ContentTrackingController trackingController;
+//    @Inject
+//    ContentTrackingController trackingController;
 
     @GET
     public TrackingSummaryDTO getTrackingSummary(@PathParam( "tracking-id" ) String trackingID )
                     throws AuditQueryWebException
     {
-        TrackingSummaryDTO trackingSummaryDTO;
-        try
-        {
-            trackingSummaryDTO = trackingController.getTrackingSummaryByID( trackingID );
-        }
-        catch ( Exception e )
-        {
-            throw new AuditQueryWebException( e );
-        }
+        TrackingSummaryDTO trackingSummaryDTO = null;
+//        try
+//        {
+//            trackingSummaryDTO = trackingController.getTrackingSummaryByID( trackingID );
+//        }
+//        catch ( Exception e )
+//        {
+//            throw new AuditQueryWebException( e );
+//        }
 
         return trackingSummaryDTO;
     }

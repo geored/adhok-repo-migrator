@@ -22,6 +22,7 @@ import org.indy.geored.repomigrator.olap.handler.CallbackRequest;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
+import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
@@ -32,15 +33,12 @@ public class ContentTrackingOLAPResource
                 implements RestResources
 {
 
-    @Inject
-    ContentTrackingController trackingController;
+//    @Inject
+//    ContentTrackingController trackingController;
 
-    @POST
-    @Path( "/history/content/tracking" )
+    @GET
     public Response getTrackedContent( CallbackRequest request )
     {
-
-        trackingController.getTrackedContent( request );
 
         return Response.ok().build();
     }

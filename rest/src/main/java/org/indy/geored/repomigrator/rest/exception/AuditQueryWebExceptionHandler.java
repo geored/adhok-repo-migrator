@@ -24,19 +24,19 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;
 
 public class AuditQueryWebExceptionHandler
-                implements RestResources, ExceptionMapper<AuditQueryWebException>
+//                implements RestResources, ExceptionMapper<AuditQueryWebException>
 {
 
-    public Response toResponse( AuditQueryWebException e )
-    {
-        Logger logger = LoggerFactory.getLogger( getClass() );
-        logger.error( "WebException:", e );
-
-        String error = "{\"error\":" + "\"" + e.getMessage() + "\"}";
-        Response response = Response.status( Response.Status.INTERNAL_SERVER_ERROR )
-                                    .entity( error )
-                                    .type( MediaType.APPLICATION_JSON_TYPE )
-                                    .build();
-        return response;
-    }
+//    public Response toResponse( AuditQueryWebException e )
+//    {
+//        Logger logger = LoggerFactory.getLogger( getClass() );
+//        logger.error( "WebException:", e );
+//
+//        String error = "{\"error\":" + "\"" + e.getMessage() + "\"}";
+//        Response response = Response.status( Response.Status.INTERNAL_SERVER_ERROR )
+//                                    .entity( error )
+//                                    .type( MediaType.APPLICATION_JSON_TYPE )
+//                                    .build();
+//        return response;
+//    }
 }

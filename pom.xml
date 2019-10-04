@@ -21,7 +21,7 @@
   <parent>
     <groupId>org.commonjava</groupId>
     <artifactId>commonjava</artifactId>
-    <version>15</version>
+    <version>13</version>
   </parent>
 
   <groupId>org.indy.geored</groupId>

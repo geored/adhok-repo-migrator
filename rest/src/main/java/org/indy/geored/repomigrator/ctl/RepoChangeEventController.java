@@ -32,86 +32,86 @@ import java.util.List;
 @ApplicationScoped
 public class RepoChangeEventController
 {
-    private final Logger logger = LoggerFactory.getLogger( this.getClass() );
-
-    @Inject
-    @RepoChangeCache
-    private Cache<String, ChangeEvent> changeCache;
-
-    private QueryFactory queryFactory;
-
-    @PostConstruct
-    public void init()
-    {
-        queryFactory = Search.getQueryFactory( changeCache );
-    }
-
-    public List<ChangeEvent> getEventsByStoreKey(String storeKey, int max, int offset )
-    {
-        return queryFactory.from( ChangeEvent.class )
-                           .having( "storeKey" )
-                           .eq( storeKey )
-                           .maxResults( max )
-                           .startOffset( offset )
-                           .build()
-                           .list();
-
-    }
-
-    public Integer sizeOfEventsByStoreKey( String storeKey )
-    {
-        return queryFactory.from( ChangeEvent.class ).having( "storeKey" ).eq( storeKey ).build().getResultSize();
-    }
-
-    public List<ChangeEvent> getEventsByPattern( String pattern, int max, int offset )
-    {
-        List<ChangeEvent> events;
-        if ( StringUtils.isBlank( pattern ) )
-        {
-            events = queryFactory.from( ChangeEvent.class ).startOffset( offset ).maxResults( max ).build().list();
-        }
-        else
-        {
-            events = queryFactory.from( ChangeEvent.class )
-                                 .having( "storeKey" )
-                                 .like( pattern )
-                                 .startOffset( offset )
-                                 .maxResults( max )
-                                 .build()
-                                 .list();
-        }
-
-        logger.debug( "Get events size: {}", events.size() );
-        return events;
-    }
-
-    public Integer sizeOfEventsByPattern( String pattern )
-    {
-        if ( StringUtils.isBlank( pattern ) )
-        {
-            return queryFactory.from( ChangeEvent.class ).build().getResultSize();
-        }
-        return queryFactory.from( ChangeEvent.class ).having( "storeKey" ).like( pattern ).build().getResultSize();
-    }
-
-    public List<ChangeEvent> getAllEvents( int max, int offset )
-    {
-        return queryFactory.from( ChangeEvent.class ).maxResults( max ).startOffset( offset ).build().list();
-    }
-
-    public Integer sizeOfAllEvents()
-    {
-        return queryFactory.from( ChangeEvent.class ).build().getResultSize();
-    }
-
-    public ChangeEvent getEventById( final String eventId )
-    {
-        return (ChangeEvent) queryFactory.from( ChangeEvent.class )
-                                         .having( "eventId" )
-                                         .eq( eventId )
-                                         .build()
-                                         .list()
-                                         .get( 0 );
-    }
+//    private final Logger logger = LoggerFactory.getLogger( this.getClass() );
+//
+//    @Inject
+//    @RepoChangeCache
+//    private Cache<String, ChangeEvent> changeCache;
+//
+//    private QueryFactory queryFactory;
+//
+//    @PostConstruct
+//    public void init()
+//    {
+//        queryFactory = Search.getQueryFactory( changeCache );
+//    }
+//
+//    public List<ChangeEvent> getEventsByStoreKey(String storeKey, int max, int offset )
+//    {
+//        return queryFactory.from( ChangeEvent.class )
+//                           .having( "storeKey" )
+//                           .eq( storeKey )
+//                           .maxResults( max )
+//                           .startOffset( offset )
+//                           .build()
+//                           .list();
+//
+//    }
+//
+//    public Integer sizeOfEventsByStoreKey( String storeKey )
+//    {
+//        return queryFactory.from( ChangeEvent.class ).having( "storeKey" ).eq( storeKey ).build().getResultSize();
+//    }
+//
+//    public List<ChangeEvent> getEventsByPattern( String pattern, int max, int offset )
+//    {
+//        List<ChangeEvent> events;
+//        if ( StringUtils.isBlank( pattern ) )
+//        {
+//            events = queryFactory.from( ChangeEvent.class ).startOffset( offset ).maxResults( max ).build().list();
+//        }
+//        else
+//        {
+//            events = queryFactory.from( ChangeEvent.class )
+//                                 .having( "storeKey" )
+//                                 .like( pattern )
+//                                 .startOffset( offset )
+//                                 .maxResults( max )
+//                                 .build()
+//                                 .list();
+//        }
+//
+//        logger.debug( "Get events size: {}", events.size() );
+//        return events;
+//    }
+//
+//    public Integer sizeOfEventsByPattern( String pattern )
+//    {
+//        if ( StringUtils.isBlank( pattern ) )
+//        {
+//            return queryFactory.from( ChangeEvent.class ).build().getResultSize();
+//        }
+//        return queryFactory.from( ChangeEvent.class ).having( "storeKey" ).like( pattern ).build().getResultSize();
+//    }
+//
+//    public List<ChangeEvent> getAllEvents( int max, int offset )
+//    {
+//        return queryFactory.from( ChangeEvent.class ).maxResults( max ).startOffset( offset ).build().list();
+//    }
+//
+//    public Integer sizeOfAllEvents()
+//    {
+//        return queryFactory.from( ChangeEvent.class ).build().getResultSize();
+//    }
+//
+//    public ChangeEvent getEventById( final String eventId )
+//    {
+//        return (ChangeEvent) queryFactory.from( ChangeEvent.class )
+//                                         .having( "eventId" )
+//                                         .eq( eventId )
+//                                         .build()
+//                                         .list()
+//                                         .get( 0 );
+//    }
 
 }

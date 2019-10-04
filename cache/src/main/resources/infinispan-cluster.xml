@@ -10,10 +10,10 @@
     </jgroups>
     -->
 
-    <cache-container name="auditQueryClusterCacheManager">
+    <cache-container name="repomigratorQueryClusterCacheManager">
         <transport/>
 
-        <distributed-cache name="event-audit"/>
+        <distributed-cache name="event-repomigration"/>
 
         <distributed-cache name="repo-change" />
 

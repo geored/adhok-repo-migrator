@@ -4,9 +4,12 @@ import org.commonjava.propulsor.config.annotation.ConfigName;
 import org.commonjava.propulsor.config.annotation.SectionName;
 
 import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.inject.Default;
 
+
+
+@Default
 @ApplicationScoped
-@SectionName
 public class DefaultRepomigratorQueryConfig implements RepomigratorQueryConfigInfo {
 
     private String configDir;

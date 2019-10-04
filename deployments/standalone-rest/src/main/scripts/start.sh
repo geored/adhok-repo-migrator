@@ -20,7 +20,7 @@ THIS=$(cd ${0%/*} && echo $PWD/${0##*/})
 BASEDIR=`dirname ${THIS}`
 BASEDIR=`dirname ${BASEDIR}`
 
-echo "BASEDIR: ${BASEDIR}"
+# echo "BASEDIR: ${BASEDIR}"
 
 AQ_CONF_DIR=${AQ_CONF_DIR:-${BASEDIR}/conf}
 
@@ -38,7 +38,7 @@ do
   CP=${CP}:${f}
 done
 
-echo "JAVA classpath:  ${CP}"
+# echo "JAVA classpath:  ${CP}"
 
 JAVA=`which java`
 $JAVA -version 2>&1 > /dev/null
@@ -51,8 +51,7 @@ JAVA_OPTS="$JAVA_OPTS $JAVA_DEBUG_OPTS"
 
 MAIN_CLASS=org.indy.geored.repomigrator.boot.Main
 
-"$JAVA" ${JAVA_OPTS} -cp "${CP}" -Drepomigrator.boot.defaults="${BASEDIR}/bin/boot.properties" -Drepomigrator
-.home="${BASEDIR}" -Djava.net.preferIPv4Stack=true ${MAIN_CLASS} "$@"
+"$JAVA" ${JAVA_OPTS} -cp "${CP}" -Drepomigrator.boot.defaults="${BASEDIR}/bin/boot.properties" -Drepomigrator.home="${BASEDIR}" -Djava.net.preferIPv4Stack=true ${MAIN_CLASS} "$@"
 ret=$?
 if [ $ret == 0 -o $ret == 130 ]; then
   exit 0

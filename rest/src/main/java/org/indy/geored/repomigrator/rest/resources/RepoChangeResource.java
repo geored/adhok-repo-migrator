@@ -40,11 +40,11 @@ import static org.commonjava.propulsor.deploy.undertow.util.StandardApplicationC
 public class RepoChangeResource
         implements RestResources
 {
-    @Inject
-    private RepoChangeEventController ctl;
-
-    private final int DEFAULT_PAGE = 0;
-    private final int DEFAULT_PAGE_SIZE = 25;
+//    @Inject
+//    private RepoChangeEventController ctl;
+//
+//    private final int DEFAULT_PAGE = 0;
+//    private final int DEFAULT_PAGE_SIZE = 25;
 
     @GET
     @Produces( application_json )
@@ -54,52 +54,53 @@ public class RepoChangeResource
                                            final @QueryParam( "pattern" ) String pattern,
                                            @Context final UriInfo uriInfo )
     {
-        List<ChangeSummary> summaries = null;
-        int startIndex = startIndex( page, pageSize );
-        int curPageSize = pageSize == null ? DEFAULT_PAGE_SIZE : pageSize;
-        //TODO lastUpdate support not implement yet
-        List<ChangeEvent> events = ctl.getEventsByPattern( pattern, curPageSize, startIndex );
-        return Response.status( 200 )
-                       .entity( collectSummaryStats( events ) )
-                       .build();
+//        List<ChangeSummary> summaries = null;
+//        int startIndex = startIndex( page, pageSize );
+//        int curPageSize = pageSize == null ? DEFAULT_PAGE_SIZE : pageSize;
+//        //TODO lastUpdate support not implement yet
+//        List<ChangeEvent> events = ctl.getEventsByPattern( pattern, curPageSize, startIndex );
+//        return Response.status( 200 )
+//                       .entity( collectSummaryStats( events ) )
+//                       .build();
+        return Response.status(200).build();
     }
 
 
-    private List<ChangeSummaryStats> collectSummaryStats(List<ChangeEvent> events )
-    {
-        final Map<String, ChangeSummaryStats> stats = new HashMap<>();
-
-        events.forEach( e -> {
-            ChangeSummaryStats stat = stats.computeIfAbsent( e.getStoreKey(), k -> {
-                ChangeSummaryStats newStat = new ChangeSummaryStats();
-                newStat.setStoreKey( k );
-                newStat.setLastUpdate( e.getChangeTime() );
-                return newStat;
-            } );
-
-            switch ( e.getChangeType() )
-            {
-                case CREATE:
-                    stat.setCreates( stat.getCreates() + 1 );
-                    break;
-                case UPDATE:
-                    stat.setUpdates( stat.getUpdates() + 1 );
-                    break;
-                case DELETE:
-                    stat.setDeletes( stat.getDeletes() + 1 );
-                    break;
-                default:
-                    break;
-            }
-        } );
-
-        return new ArrayList<>( stats.values() );
-    }
-
-    private int startIndex( final Integer page, final Integer pageSize )
-    {
-        int curPage = page == null ? DEFAULT_PAGE : page;
-        int curPageSize = pageSize == null ? DEFAULT_PAGE_SIZE : pageSize;
-        return curPage * curPageSize;
-    }
+//    private List<ChangeSummaryStats> collectSummaryStats(List<ChangeEvent> events )
+//    {
+//        final Map<String, ChangeSummaryStats> stats = new HashMap<>();
+//
+//        events.forEach( e -> {
+//            ChangeSummaryStats stat = stats.computeIfAbsent( e.getStoreKey(), k -> {
+//                ChangeSummaryStats newStat = new ChangeSummaryStats();
+//                newStat.setStoreKey( k );
+//                newStat.setLastUpdate( e.getChangeTime() );
+//                return newStat;
+//            } );
+//
+//            switch ( e.getChangeType() )
+//            {
+//                case CREATE:
+//                    stat.setCreates( stat.getCreates() + 1 );
+//                    break;
+//                case UPDATE:
+//                    stat.setUpdates( stat.getUpdates() + 1 );
+//                    break;
+//                case DELETE:
+//                    stat.setDeletes( stat.getDeletes() + 1 );
+//                    break;
+//                default:
+//                    break;
+//            }
+//        } );
+//
+//        return new ArrayList<>( stats.values() );
+//    }
+//
+//    private int startIndex( final Integer page, final Integer pageSize )
+//    {
+//        int curPage = page == null ? DEFAULT_PAGE : page;
+//        int curPageSize = pageSize == null ? DEFAULT_PAGE_SIZE : pageSize;
+//        return curPage * curPageSize;
+//    }
 }
