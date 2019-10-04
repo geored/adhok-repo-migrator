@@ -1,0 +1,16 @@
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/model-java/src/main/java/org/indy/geored/repomigrator/history/ChangeEvent.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/model-java/src/main/java/org/indy/geored/repomigrator/fileevent/FileEventType.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/model-java/src/main/java/org/indy/geored/repomigrator/fileevent/FileGroupingEvent.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/model-java/src/main/java/org/indy/geored/repomigrator/history/ChangeType.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/model-java/src/main/java/org/indy/geored/repomigrator/tracking/io/AuditQueryObjectMapper.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/model-java/src/main/java/org/indy/geored/repomigrator/history/dto/ChangeSummaryDTO.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/model-java/src/main/java/org/indy/geored/repomigrator/tracking/dto/TrackedContentDTO.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/model-java/src/main/java/org/indy/geored/repomigrator/tracking/TrackingSummary.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/model-java/src/main/java/org/indy/geored/repomigrator/tracking/dto/TrackedContentEntryDTO.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/model-java/src/main/java/org/indy/geored/repomigrator/fileevent/FileEvent.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/model-java/src/main/java/org/indy/geored/repomigrator/history/dto/ChangeEventDTO.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/model-java/src/main/java/org/indy/geored/repomigrator/history/ChangeSummary.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/model-java/src/main/java/org/indy/geored/repomigrator/fileevent/FileGroupingEventType.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/model-java/src/main/java/org/indy/geored/repomigrator/common/PaginatedResult.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/model-java/src/main/java/org/indy/geored/repomigrator/history/dto/ChangeSummaryStats.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/model-java/src/main/java/org/indy/geored/repomigrator/tracking/dto/TrackingSummaryDTO.java

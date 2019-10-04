@@ -1,0 +1,15 @@
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/rest/src/main/java/org/indy/geored/repomigrator/olap/handler/CallbackRequest.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/rest/src/main/java/org/indy/geored/repomigrator/rest/exception/AuditQueryWebExceptionHandler.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/rest/src/main/java/org/indy/geored/repomigrator/rest/conf/RepomigratorRestAppConfig.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/rest/src/main/java/org/indy/geored/repomigrator/rest/resources/RepoChangeResource.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/rest/src/main/java/org/indy/geored/repomigrator/rest/resources/ContentTrackingResource.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/rest/src/main/java/org/indy/geored/repomigrator/ctl/RepoChangeEventController.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/rest/src/main/java/org/indy/geored/repomigrator/olap/handler/RetriableProcessor.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/rest/src/main/java/org/indy/geored/repomigrator/conf/RestConf.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/rest/src/main/java/org/indy/geored/repomigrator/olap/handler/ContentTrackingOLAPCallback.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/rest/src/main/java/org/indy/geored/repomigrator/rest/exception/AuditQueryWebException.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/rest/src/main/java/org/indy/geored/repomigrator/olap/resources/ContentTrackingOLAPResource.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/rest/src/main/java/org/indy/geored/repomigrator/olap/handler/CallbackTarget.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/rest/src/main/java/org/indy/geored/repomigrator/olap/handler/CallbackJob.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/rest/src/main/java/org/indy/geored/repomigrator/olap/handler/CallbackResult.java
+/Users/gorgigeorgievski/_Work/_2019/10_Octobar/03.10.2019/adhok-repo-migrator/rest/src/main/java/org/indy/geored/repomigrator/ctl/ContentTrackingController.java

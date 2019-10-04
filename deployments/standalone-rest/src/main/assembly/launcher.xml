@@ -25,19 +25,7 @@
     <baseDirectory>adhok-repo-migrator</baseDirectory>
 
     <dependencySets>
-
-        <!-- UI -->
-<!--        <dependencySet>-->
-<!--            <useProjectArtifact>true</useProjectArtifact>-->
-<!--            <useStrictFiltering>true</useStrictFiltering>-->
-<!--            <includes>-->
-<!--                <include>org.commonjava.repomigrator:auditquery-ui-layover</include>-->
-<!--            </includes>-->
-<!--            <outputDirectory>ui</outputDirectory>-->
-<!--            <unpack>true</unpack>-->
-<!--        </dependencySet>-->
-
-        <!-- Audit Query Service -->
+        <!-- Ad-Hok Repo Migrator  Query Service -->
         <dependencySet>
             <useProjectArtifact>true</useProjectArtifact>
             <useProjectAttachments>true</useProjectAttachments>

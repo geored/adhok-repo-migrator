@@ -30,7 +30,7 @@
             <useStrictFiltering>true</useStrictFiltering>
             <scope>runtime</scope>
             <includes>
-                <include>org.commonjava*</include>
+                <include>org.indy*</include>
             </includes>
             <excludes>
 

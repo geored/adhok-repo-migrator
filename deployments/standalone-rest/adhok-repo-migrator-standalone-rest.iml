@@ -71,8 +71,8 @@
     <orderEntry type="library" name="Maven: org.commonjava.propulsor.config:propulsor-configuration-core:1.4" level="project" />
     <orderEntry type="library" name="Maven: org.commonjava.propulsor.config:propulsor-configuration-dotconf:1.4" level="project" />
     <orderEntry type="module" module-name="adhok-repo-migrator-rest" />
-    <orderEntry type="module" module-name="auditquery-api" />
-    <orderEntry type="module" module-name="auditquery-cache" />
+    <orderEntry type="module" module-name="adhok-repo-migrator-api" />
+    <orderEntry type="module" module-name="adhok-repo-migrator-cache" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.9" level="project" />
     <orderEntry type="library" name="Maven: org.commonjava.cdi.util:weft:1.10" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard.metrics:metrics-core:4.0.2" level="project" />
@@ -131,6 +131,6 @@
     <orderEntry type="library" name="Maven: javax.enterprise:cdi-api:1.2" level="project" />
     <orderEntry type="library" name="Maven: javax.el:javax.el-api:3.0.0" level="project" />
     <orderEntry type="library" name="Maven: javax.interceptor:javax.interceptor-api:1.2" level="project" />
-    <orderEntry type="module" module-name="auditquery-core" />
+    <orderEntry type="module" module-name="adhok-repo-migrator-core" />
   </component>
 </module>

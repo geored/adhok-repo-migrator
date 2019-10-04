@@ -1,1 +1,2 @@
-org/commonjava/repomigrator/boot/Main.class
+org/indy/geored/repomigrator/conf/RepomigratorQueryConfiguration.class
+org/indy/geored/repomigrator/boot/Main.class

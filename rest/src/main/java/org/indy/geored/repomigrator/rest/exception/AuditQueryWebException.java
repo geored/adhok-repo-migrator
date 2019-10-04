@@ -13,17 +13,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.commonjava.repomigrator.boot;
+package org.indy.geored.repomigrator.rest.exception;
 
-import org.commonjava.propulsor.boot.BootOptions;
-import org.commonjava.propulsor.boot.Booter;
-
-public class Main
+public class AuditQueryWebException
+                extends Throwable
 {
-    public static void main( String[] args ) throws Exception
+
+    public AuditQueryWebException( String message )
     {
-        BootOptions options = Booter.loadFromSysProps( "...", "...", "..." );
-        Booter booter = new Booter();
-        booter.runAndWait( options );
+        super( message );
     }
+
+    public AuditQueryWebException( Throwable throwable )
+    {
+        super( throwable );
+    }
+
+    public AuditQueryWebException( String message, Throwable throwable )
+    {
+        super( message, throwable );
+    }
+
 }

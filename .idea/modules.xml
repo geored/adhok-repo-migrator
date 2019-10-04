@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/api/adhok-repo-migrator-api.iml" filepath="$PROJECT_DIR$/api/adhok-repo-migrator-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cache/adhok-repo-migrator-cache.iml" filepath="$PROJECT_DIR$/cache/adhok-repo-migrator-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/adhok-repo-migrator-core.iml" filepath="$PROJECT_DIR$/core/adhok-repo-migrator-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/deployments/adhok-repo-migrator-deployments-parent.iml" filepath="$PROJECT_DIR$/deployments/adhok-repo-migrator-deployments-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/model-java/adhok-repo-migrator-model-java.iml" filepath="$PROJECT_DIR$/model-java/adhok-repo-migrator-model-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/adhok-repo-migrator-parent.iml" filepath="$PROJECT_DIR$/adhok-repo-migrator-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/rest/adhok-repo-migrator-rest.iml" filepath="$PROJECT_DIR$/rest/adhok-repo-migrator-rest.iml" />
       <module fileurl="file://$PROJECT_DIR$/deployments/standalone-rest/adhok-repo-migrator-standalone-rest.iml" filepath="$PROJECT_DIR$/deployments/standalone-rest/adhok-repo-migrator-standalone-rest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/api/auditquery-api.iml" filepath="$PROJECT_DIR$/api/auditquery-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cache/auditquery-cache.iml" filepath="$PROJECT_DIR$/cache/auditquery-cache.iml" />
-      <module fileurl="file://$PROJECT_DIR$/core/auditquery-core.iml" filepath="$PROJECT_DIR$/core/auditquery-core.iml" />
     </modules>
   </component>
 </project>
