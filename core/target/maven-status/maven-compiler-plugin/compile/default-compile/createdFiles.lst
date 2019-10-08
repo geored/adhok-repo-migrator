@@ -4,3 +4,4 @@ org/indy/geored/repomigrator/core/conf/RepomigratorQueryConfigInfo.class
 org/indy/geored/repomigrator/core/inject/ConfigRegistryProducer.class
 org/indy/geored/repomigrator/core/conf/DefaultRepomigratorQueryConfig.class
 org/indy/geored/repomigrator/core/web/ResourcesFilter.class
+org/indy/geored/repomigrator/core/conf/RepomigratorWeftConfig.class

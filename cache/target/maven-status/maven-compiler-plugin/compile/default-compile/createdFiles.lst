@@ -1,7 +1,4 @@
 org/indy/geored/repomigrator/cache/RepoChangeCache.class
-org/indy/geored/repomigrator/cache/RepomigratorCacheProducer.class
 org/indy/geored/repomigrator/cache/FileEventsCache.class
-org/indy/geored/repomigrator/cache/TrackedContentDTOCache.class
 org/indy/geored/repomigrator/cache/CacheProducer.class
 org/indy/geored/repomigrator/cache/conf/ISPNClusterConfig.class
-org/indy/geored/repomigrator/cache/TrackingSummaryCache.class

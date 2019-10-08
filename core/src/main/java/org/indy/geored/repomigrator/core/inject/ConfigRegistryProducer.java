@@ -17,32 +17,32 @@ import javax.inject.Inject;
 @ApplicationScoped
 public class ConfigRegistryProducer {
 
-//    @Inject
-//    Instance<RepomigratorQueryConfigInfo> configs;
-//
-//    @Produces
-//    public ConfigurationRegistry getConfigurationRegistry() throws ConfigurationException
-//    {
-//        Logger logger = LoggerFactory.getLogger( getClass() );
-//        logger.info( "RepoMigration service configuration registry producer." );
-//
-//        DefaultConfigurationListener configListener =
-//            new DefaultConfigurationListener();
-//
-//
-//        configs.forEach( (conf) -> {
-//            try
-//            {
-//                configListener.with( conf );
-//            }
-//            catch ( ConfigurationException e )
-//            {
-//                logger.error( "Load configuration error, config:{}, error: {}", conf.getClass(), e.getMessage(), e );
-//            }
-//        });
-//
-//        return new DefaultConfigurationRegistry( configListener );
-//    }
+    @Inject
+    Instance<RepomigratorQueryConfigInfo> configs;
+
+    @Produces
+    public ConfigurationRegistry getConfigurationRegistry() throws ConfigurationException
+    {
+        Logger logger = LoggerFactory.getLogger( getClass() );
+        logger.info( "RepoMigration service configuration registry producer." );
+
+        DefaultConfigurationListener configListener =
+            new DefaultConfigurationListener();
+
+
+        configs.forEach( (conf) -> {
+            try
+            {
+                configListener.with( conf );
+            }
+            catch ( ConfigurationException e )
+            {
+                logger.error( "Load configuration error, config:{}, error: {}", conf.getClass(), e.getMessage(), e );
+            }
+        });
+
+        return new DefaultConfigurationRegistry( configListener );
+    }
 
 
 }

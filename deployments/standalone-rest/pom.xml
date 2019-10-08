@@ -51,6 +51,11 @@
             <groupId>org.commonjava.propulsor.config</groupId>
             <artifactId>propulsor-configuration-dotconf</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.commonjava.atservice</groupId>
+            <artifactId>atservice-annotation</artifactId>
+            <version>0.1</version>
+        </dependency>
     </dependencies>
 
     <build>

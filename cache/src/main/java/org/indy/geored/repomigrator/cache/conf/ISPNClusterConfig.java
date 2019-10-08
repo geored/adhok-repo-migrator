@@ -1,5 +1,6 @@
 package org.indy.geored.repomigrator.cache.conf;
 
+import java.io.InputStream;
 import org.apache.commons.lang3.StringUtils;
 import org.commonjava.propulsor.config.annotation.ConfigName;
 import org.commonjava.propulsor.config.annotation.SectionName;
@@ -63,4 +64,15 @@ public class ISPNClusterConfig implements RepomigratorQueryConfigInfo, SystemPro
             props.setProperty( propName, propVal );
         }
     }
+	
+	@Override
+	public String getDefaultConfigFileName() {
+		return RepomigratorQueryConfigInfo.APPEND_DEFAULTS_TO_MAIN_CONF;
+	}
+
+	@Override
+	public InputStream getDefaultConfig() {
+		return Thread.currentThread().getContextClassLoader().getResourceAsStream("./etc/main.conf");
+	}
+
 }

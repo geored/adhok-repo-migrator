@@ -15,18 +15,23 @@
  */
 package org.indy.geored.repomigrator.boot;
 
+import org.commonjava.atservice.annotation.Service;
+import org.commonjava.propulsor.boot.BootInterface;
 import org.commonjava.propulsor.boot.BootOptions;
 import org.commonjava.propulsor.boot.Booter;
 
+
+@Service(BootInterface.class)
 public class Main
 {
     public static void main( String[] args ) throws Exception
     {
+        BootOptions ops = Booter.loadFromSysProps(
+          "repomigrator",
+          "repomigrator.boot.defaults",
+          "repomigrator.home");
+
         new Booter()
-          .runAndWait( Booter.loadFromSysProps(
-            "repomigrator",
-            "repomigrator.boot.defaults",
-            "repomigrator.home" )
-          );
+          .runAndWait(ops);
     }
 }

@@ -66,6 +66,11 @@
             <groupId>org.indy.geored</groupId>
             <artifactId>adhok-repo-migrator-model-java</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.commonjava.cdi.util</groupId>
+            <artifactId>weft</artifactId>
+            <version>1.15</version>
+        </dependency>
     </dependencies>
 </project>
 

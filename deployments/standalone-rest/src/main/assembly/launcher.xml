@@ -51,7 +51,7 @@
     <fileSets>
         <fileSet>
             <directory>${project.basedir}/src/main/conf</directory>
-            <outputDirectory>conf</outputDirectory>
+            <outputDirectory>etc</outputDirectory>
         </fileSet>
         <fileSet>
             <directory>${project.basedir}/src/main/scripts</directory>
