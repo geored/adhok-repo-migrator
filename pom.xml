@@ -56,7 +56,7 @@
     <junitVersion>4.12</junitVersion>
     <commonslang3Version>3.8</commonslang3Version>
     <jgroupsVersion>4.0.4.Final</jgroupsVersion>
-    <commonsioVersion>2.6</commonsioVersion>
+    <commonsioVersion>2.7</commonsioVersion>
     <swaggerVersion>1.5.9</swaggerVersion>
   </properties>
 
