@@ -51,7 +51,7 @@
     <infinispanVersion>9.4.7.Final</infinispanVersion>
     <hibernateVersion>5.8.1.Final</hibernateVersion>
     <httpcoreVersion>4.4.6</httpcoreVersion>
-    <httpclientVersion>4.5.3</httpclientVersion>
+    <httpclientVersion>4.5.13</httpclientVersion>
     <jhttpcVersion>1.9</jhttpcVersion>
     <junitVersion>4.12</junitVersion>
     <commonslang3Version>3.8</commonslang3Version>
